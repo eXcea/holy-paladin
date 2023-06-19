@@ -1,7 +1,7 @@
 {
     "load": [
         "Exhpal.lua",
-        "hpal/holy-actor.lua",
-        "hpal/holy-spells.lua"
+        "paladin/holy-actor.lua",
+        "paladin/holy-spells.lua"
     ]
 }
