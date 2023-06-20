@@ -9,9 +9,9 @@ holy:Init(function()
         -- auto attack to generate rage
         StartAttack()
         -- spells we created in the spell book are magically available in our actor!
-        holyshock()
-        crusaderstrike()
         judgement()
+        crusaderstrike()
+        holyshock()
         divinetoll()
         holyprism()
     end
