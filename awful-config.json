@@ -1,6 +1,6 @@
 {
     "load": [
-        "paladin/core.lua"
+        "paladin/core.lua",
         "paladin/holy-actor.lua",
         "paladin/holy-spells.lua"
     ]
