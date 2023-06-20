@@ -1,12 +1,21 @@
-local Unlocker, awful, project = ...
+local Unlocker, awful, project = holy
 local holy = project.paladin.holy
 
 local Spell = awful.Spell
 awful.Populate({
-    execute = Spell(163201),
-    slam = Spell(1464),
-    mortalStrike = Spell(12294),
-    overpower = Spell(7384),
-    warbreaker = Spell(262161), -- <-- don't forget the comma here when you add more spells, this is a table!
-}, holy, getfenv(1))
--- ^^^ make sure you replace "arms" here with your specialization's routine actor!
+
+  -- static objects [not req. but tiny perf. increase and takes care of declaration where i use them]
+  target = awful.target,
+  focus = awful.focus,
+  player = awful.player,
+  healer = awful.healer,
+  pet = awful.pet,
+  enemyHealer = awful.enemyHealer,
+
+  -- damage
+  holyshock = Spell(20473, { damage = "magical", targeted = true }),
+  crusaderstrike = Spell(35395, { damage = "physical", targeted = true }),
+  judgement = Spell(343122, { damage = "magucal", targeted = true }),
+}   
+end
+end)
