@@ -1,7 +1,7 @@
 {
     "load": [
         "expally.lua",
-        "paladin/holy-actor.lua",
-        "paladin/holy-spells.lua"
+        "holy-actor.lua",
+        "holy-spells.lua"
     ]
 }
