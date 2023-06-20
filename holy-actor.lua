@@ -1,12 +1,18 @@
 local Unlocker, awful, project = ...
 local holy = project.paladin.holy
 
-print("eXcre Holy Paladin rotation loaded and ready!")
+print("holy pally locked and loaded!")
 
-paladin:Init(function()
-    -- Keep in mind that we only want to execute our rotation if there is an enemy target.
+holy:Init(function()
+    -- only do this stuff if our target is an enemy
     if target.enemy then
+        -- auto attack to generate rage
         StartAttack()
+        -- spells we created in the spell book are magically available in our actor!
         holyshock()
         crusaderstrike()
         judgement()
+        divinetoll()
+        holyprism()
+    end
+end)
