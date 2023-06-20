@@ -1,5 +1,5 @@
 local Unlocker, awful, project = ...
-local holy = project.paladin.holy
+local paladin = project.paladin.holy
 
 -- stuff out here only runs once, when the file is first loaded.
 print("Example warrior locked and loaded!")
