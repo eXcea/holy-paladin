@@ -1,5 +1,5 @@
 local Unlocker, awful, project = ...
-local holy = project.paladin.holy
+local paladin = project.paladin.holy
 
 local Spell = awful.Spell
 awful.Populate({
